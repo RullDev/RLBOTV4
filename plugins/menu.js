@@ -388,9 +388,9 @@ let ftt = `*Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan sil
     return conn.sendMessage(m.chat, listMessage, { quoted: fkgif, mentions: await conn.parseMention(judul), contextInfo: { forwardingScore: 99999, isForwarded: true }})
     
     }
-handler.help = ['simplemenu']
+handler.help = ['menu', 'help', '?']
 handler.tags = ['main']
-handler.command = /^(simplemenu)$/i
+handler.command = /^(menu|help|\?)$/i
  handler.owner = false 
  handler.mods = false 
  handler.premium = false 
