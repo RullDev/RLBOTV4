@@ -211,7 +211,7 @@ let levelling = require('../lib/levelling')
     itemCount : 999,
     status: 1,
     surface : 1,
-    message: `廾ΛӨЯI IQ MD 🌱 ┊ 𝗥𝗣𝗚 Whatsapp ʙᴏᴛ`, 
+    message: `RullBOT 🌱 ┊ 𝗥𝗣𝗚 Whatsapp ʙᴏᴛ`, 
     orderTitle: `▮Menu ▸`,
     thumbnail: await (await fetch('https://telegra.ph/file/8450b71563bdbfb85b98d.jpg')).buffer(), //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
@@ -228,7 +228,7 @@ let levelling = require('../lib/levelling')
     itemCount : 2022,
     status: 1,
     surface : 1,
-    message: `CUTE IQ-MD By Ziv San`, 
+    message: `RullBOT By KhrlMstfa`, 
     orderTitle: `▮Menu ▸`,
     thumbnail: await (await fetch('https://telegra.ph/file/db5b4aed0d6d2e6c10c8f.jpg')).buffer(), //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
@@ -243,8 +243,8 @@ let levelling = require('../lib/levelling')
                 },
 	 message: { 
 		"extendedTextMessage": {
-                 "text":`CUTE IQ MD 🌱 ┊ 𝗥𝗣𝗚 Whatsapp ʙᴏᴛ`,
-                 "title": `CUTE IQ MD 🌱 ┊ 𝗥𝗣𝗚 Whatsapp ʙᴏᴛ`,
+                 "text":`RULL MD 🌱 ┊ 𝗥𝗣𝗚 Whatsapp ʙᴏᴛ`,
+                 "title": `RULL MD 🌱 ┊ 𝗥𝗣𝗚 Whatsapp ʙᴏᴛ`,
                  'jpegThumbnail': await (await fetch('https://telegra.ph/file/6f11ac2de8d57a1c831c4.jpg')).buffer()
                         }
 	                  } 
@@ -254,11 +254,11 @@ let levelling = require('../lib/levelling')
 
 ●────━───༺༻───━────●
                 *《 BOT INFO 》*
-⚘ *Bot Name: CUTE IQ-MD IQ MD*
-⚘ *Creator: Stah Ziv San*
+⚘ *Bot Name: RULLBOT*
+⚘ *Creator: Stah KhrlMstfa*
 ⚘ *Contact Owner Bot*
-*http://wa.me/16199961931*
-⚘ *Tanggal: 9 Juli 2022*  
+*http://wa.me/6287753812675*
+⚘ *Tanggal: 20 November 2022*  
 ⚘ *Jam: ${time} WIB*
 ⚘ *Status: 「 ${mode} 」*
 ⚘ *Prefix: 「 MULTI PREFIX 」*
@@ -300,15 +300,15 @@ let ftt = `*Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan sil
                               {
                                 "rows": [{
                                          "title": "📊 › Status ",
-                                         "description": "Status カ CUTE IQ-MD",
+                                         "description": "Status カ RULL-MD",
                                          "rowId": ".botstat"
                                     }, {
                                          "title": "⚡› Speed ",
-                                         "description": "Menampilkan Kecepatan Respon カ CUTE IQ-MD",
+                                         "description": "Menampilkan Kecepatan Respon カ RULL-MD",
                                          "rowId": ".ping"
                                     }, {
                                          "title": "🗒️› Info ",
-                                         "description": "Menampilkan Info カ CUTE IQ-MD",
+                                         "description": "Menampilkan Info カ RULL-MD",
                                          "rowId": ".info"
                                     }, {
                                          "title": "🎐 › Developer Bot ",
@@ -522,9 +522,9 @@ let ftt = `*Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan sil
            ] 
     const listMessage = {
       text: `Hai Kak ${name} Pilih Menu Dibawah Ini Yah Kak`,
-      footer: '© Cute IQ-MD By Ziv San',
+      footer: '© Rull Bot By KhrlMstfa',
       title: judul,
-      buttonText: "Pilih Disini",
+      buttonText: "Pilih Menu",
       sections
     }
      await conn.send3ButtonLoc(m.chat, pp, tksk, ftt, 'RENT', '.sewa', 'OWNER', '.owner', 'CREDITS', '.tqto', m)
@@ -583,7 +583,7 @@ let ftt = `*Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan sil
      quoted: ftoko, 
      contextInfo: { forwardingScore: 99999, isForwarded: true, 
          externalAdReply: { 
-             title: 'Cute IQ-MD Testing Project By Ziv San', 
+             title: 'RULL-MD Testing Project By KhrlMstfa', 
              body: `${pickRandom(['udah makan belum kak?', 'udh mandi belum kak?', 'Semangat ya kak!', 'Jangan begadang mulu ya!', 'jangan spam ya kak!', 'Jangan lupa donasi yak kak! >.<', 'Jaga kesehatan yaw kak!', 'Jangan lupa makan!', 'Jangan lupa istirahat yak! >.<', 'I Love you kak >.< ', 'Pr nya udh belum kak?', 'Jangan kebanyakan main hp yk! nanti sakit :‹'])}`, 
              description: `${pickRandom(['udah makan belum kak?', 'udh mandi belum kak?', 'Semangat ya kak!', 'Jangan begadang mulu ya!', 'jangan spam ya kak!', 'Jangan lupa donasi yak kak! >.<', 'Jaga kesehatan yaw kak!', 'Jangan lupa makan!', 'Jangan lupa istirahat yak! >.<', 'I Love you kak >.< ', 'Pr nya udh belum kak?', 'Jangan kebanyakan main hp yk! nanti sakit :‹'])}`, 
              mediaType: 2, 
@@ -597,9 +597,9 @@ let ftt = `*Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan sil
      throw e 
    } 
  } 
- handler.help = ['simplemenu']
+ handler.help = ['menu']
 handler.tags = ['main']
-handler.command = /^(simplemenu)$/i
+handler.command = /^(menu)$/i
  handler.owner = false 
  handler.mods = false 
  handler.premium = false 
