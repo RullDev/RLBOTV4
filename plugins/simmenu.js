@@ -149,8 +149,8 @@ _*${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik*_
 
 let ftt = `*Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada Owner
 
- *Official Bot By @${'0'.split('@')[0]}* 
- *Powered By @${'6283160327945'.split('@')[0]}*`
+ *Official Bot By Rull* 
+ *Powered By Khrl*`
        let judul = `${ucapanl()}`.trim() 
        const sections = [
                               {
