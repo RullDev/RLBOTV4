@@ -195,7 +195,6 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
   'absen': 'Absen',
   'premium': 'Premium',
   'anonymous': 'Anonymous Chat',
-  'menfess': 'Confess Balas',
   'internet': 'Internet',
   'downloader': 'Downloader',
   'tools': 'Tools',
