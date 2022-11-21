@@ -3,6 +3,7 @@ global.owner = JSON.parse(fs.readFileSync('./src/owner.json')) // Put your numbe
 global.mods = JSON.parse(fs.readFileSync('./src/moderator.json')) // Want some help?
 global.thumbt = global.img
 global.fsx = 999999999999
+global.namebot = '𝙍𝙪𝙡𝙡𝘽𝙊𝙏' //ubah nama botnya
 global.kontak = [
 ['6287753812675', 'Rull', true], 
 ['6282179137771', 'HAORI IQ-MD', false] 
