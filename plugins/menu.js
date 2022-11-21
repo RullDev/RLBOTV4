@@ -118,8 +118,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     },
     message: {
       extendedTextMessage: {
-        text: `RULL MD 🌱 ┊ 𝗥𝗣𝗚 Whatsapp ʙᴏᴛ`,
-        title: `RULL MD 🌱 ┊ 𝗥𝗣𝗚 Whatsapp ʙᴏᴛ`,
+        text: `${namebot} 🌱 ┊ 𝗥𝗣𝗚 Whatsapp ʙᴏᴛ`,
+        title: `${namebot} 🌱 ┊ 𝗥𝗣𝗚 Whatsapp ʙᴏᴛ`,
         jpegThumbnail: await (
           await fetch("https://telegra.ph/file/6f11ac2de8d57a1c831c4.jpg")
         ).buffer(),
@@ -135,7 +135,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 
 ●────━───༺༻───━────●
                 *《 BOT INFO 》*
-⚘ *Bot Name: RULL MD*
+⚘ *Bot Name: ${namebot}*
 ⚘ *Creator: Stah Rull Senpai*
 ⚘ *Contact Owner Bot*
 *http://wa.me/6287753812675*
@@ -184,17 +184,17 @@ _*${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik*_
       rows: [
         {
           title: "📊 › Status ",
-          description: "Status カ CUTE IQ-MD",
+          description: "Status カ ${namebot}`",
           rowId: ".botstat",
         },
         {
           title: "⚡› Speed ",
-          description: "Menampilkan Kecepatan Respon カ CUTE IQ-MD",
+          description: "Menampilkan Kecepatan Respon カ ${namebot}`",
           rowId: ".ping",
         },
         {
           title: "🗒️› Info ",
-          description: "Menampilkan Info カ CUTE IQ-MD",
+          description: "Menampilkan Info カ ${namebot}`",
           rowId: ".info",
         },
         {
@@ -390,7 +390,7 @@ _*${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik*_
       rows: [
         {
           title: "📝 ∫  Catatan Perubahan ",
-          description: "Last Update Terakhir Di CUTE IQ-MD",
+          description: "Last Update Terakhir Di ${namebot}`",
           rowId: ".notes",
         },
       ],
@@ -399,7 +399,7 @@ _*${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik*_
     {
       rows: [
         {
-          title: "「 🗨️ 」› Ziv Chat ",
+          title: "「 🗨️ 」› ${namebot}` Chat ",
           description: "Mengobrol Dengan Orang Lain",
           rowId: ". start",
         },
@@ -441,7 +441,7 @@ _*${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik*_
         },
         {
           title: "🔬  ∫  Source Code ",
-          description: "Menampilkan Source Code Bot",
+          description: "Menampilkan Source ${namebot`}",
           rowId: ".sc",
         },
         {
@@ -510,6 +510,7 @@ function clockString(ms) {
   let s = isNaN(ms) ? "--" : Math.floor(ms / 1000) % 60;
   return [h, m, s].map((v) => v.toString().padStart(2, 0)).join(":");
 }
+//yang ini gak usah diapa²in eror kalo lu recode yang bawah ini
 function ucapan() {
   const time = moment.tz("Asia/Jakarta").format("HH");
   res = "Selamat dinihari";
@@ -531,16 +532,16 @@ function ucapanl() {
   const timel = moment.tz("Asia/Jakarta").format("HH");
   resl = "Selamat dinihari 🎑";
   if (timel >= 4) {
-    resl = "Good Morning 🌅";
+    resl = "Selamat Pagi 🌅";
   }
   if (timel > 10) {
-    resl = "Good Afternoon 🏞️";
+    resl = "Selamat Siang 🏞️";
   }
   if (timel >= 15) {
-    resl = "Good Afternoon 🌇";
+    resl = "Selamat Sore 🌇";
   }
   if (timel >= 18) {
-    resl = "Good Evening 🌃";
+    resl = "Selamat Malam 🌃";
   }
   return resl;
 }
