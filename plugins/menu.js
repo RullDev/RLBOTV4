@@ -118,8 +118,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     },
     message: {
       extendedTextMessage: {
-        text: `CUTE IQ MD 🌱 ┊ 𝗥𝗣𝗚 Whatsapp ʙᴏᴛ`,
-        title: `CUTE IQ MD 🌱 ┊ 𝗥𝗣𝗚 Whatsapp ʙᴏᴛ`,
+        text: `RULL MD 🌱 ┊ 𝗥𝗣𝗚 Whatsapp ʙᴏᴛ`,
+        title: `RULL MD 🌱 ┊ 𝗥𝗣𝗚 Whatsapp ʙᴏᴛ`,
         jpegThumbnail: await (
           await fetch("https://telegra.ph/file/6f11ac2de8d57a1c831c4.jpg")
         ).buffer(),
@@ -135,10 +135,10 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 
 ●────━───༺༻───━────●
                 *《 BOT INFO 》*
-⚘ *Bot Name: CUTE IQ-MD IQ MD*
-⚘ *Creator: Stah Ziv San*
+⚘ *Bot Name: RULL MD*
+⚘ *Creator: Stah Rull Senpai*
 ⚘ *Contact Owner Bot*
-*http://wa.me/16199961931*
+*http://wa.me/6287753812675*
 ⚘ *Tanggal: ${date}*  
 ⚘ *Jam: ${time} WIB*
 ⚘ *Status: 「 ${mode} 」*
@@ -176,8 +176,8 @@ _*${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik*_
 
   let ftt = `*Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada Owner
 
- *Official Bot By @${"0".split("@")[0]}* 
- *Powered By @${"16199961931".split("@")[0]}*`;
+ *Official Bot By KhrlMstfa* 
+ *Powered By Whyzzxy Team*`;
   let judul = `${ucapanl()}`.trim();
   const sections = [
     {
@@ -478,20 +478,6 @@ _*${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik*_
     buttonText: "Pilih Disini",
     sections,
   };
-  await conn.send3ButtonLoc(
-    m.chat,
-    await conn.resize(await genProfile(conn, m), 300, 180),
-    tksk,
-    ftt,
-    "RENT",
-    ".sewa",
-    "OWNER",
-    ".owner",
-    "CREDITS",
-    ".tqto",
-    m
-  );
-  //await conn.send3ButtonLoc(m.chat, await conn.resize(pp, 300, 300), tksk, ftt, 'RENT', '.sewa', 'OWNER', '.owner', 'CREDITS', '.tqto', m)
   return conn.sendMessage(m.chat, listMessage, {
     quoted: fkgif,
     mentions: await conn.parseMention(judul),
