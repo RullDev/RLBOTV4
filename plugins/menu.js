@@ -62,7 +62,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   const jamm = Math.floor((lebih % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   const menitt = Math.floor((lebih % (1000 * 60 * 60)) / (1000 * 60));
   const detikk = Math.floor((lebih % (1000 * 60)) / 1000);
-  const ultah = new Date("April 5, 2023 23:59:59");
+  const ultah = new Date("Oktober 21, 2023 23:59:59");
   const sekarat = new Date().getTime();
   const Kurang = ultah - sekarat;
   const ohari = Math.floor(Kurang / (1000 * 60 * 60 * 24));
@@ -173,7 +173,139 @@ _*${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik*_
 ❏ *Runtime ${uptime}*
 𒍮 *User Register: ${totalreg}*
 ●────━───༺༻───━────●`;
-
+  }
+let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
+	let tags
+	let teks = `${args[0]}`.toLowerCase()
+  let arrayMenu = ['all', 'anime', 'update', 'maker', 'edukasi', 'news', 'random', 'game', 'xp', 'islamic', 'stiker', 'rpg', 'kerangajaib', 'quotes', 'admin', 'group', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database','quran', 'vote', 'nsfw', 'audio', 'jadibot', 'info', 'owner', 'nocategory']
+  if (!arrayMenu.includes(teks)) teks = '404'
+  if (teks == 'all') tags = {
+  'main': 'Main',
+  'game': 'Game',
+  'rpg': 'RPG Games',
+  'xp': 'Exp & Limit',
+  'sticker': 'Sticker',
+  'kerang': 'Kerang Ajaib',
+  'quotes': 'Quotes',
+  'fun': 'Fun',
+  'anime': 'Anime',
+  'admin': 'Admin',
+  'group': 'Group',
+  'vote': 'Voting',
+  'absen': 'Absen',
+  'premium': 'Premium',
+  'anonymous': 'Anonymous Chat',
+  'menfess': 'Confess Balas',
+  'internet': 'Internet',
+  'downloader': 'Downloader',
+  'tools': 'Tools',
+  'nulis': 'MagerNulis & Logo',
+  'audio': 'Audio',
+  'maker': 'Maker',
+  'database': 'Database',
+  'quran': 'Al Qur\'an',
+  'owner': 'Owner',
+  'host': 'Host',
+  'advanced': 'Advanced',
+  'info': 'Info',
+  '': 'No Category',
+}
+  if (teks == 'game') tags = {
+    'game': 'Game'
+  }
+  if (teks == 'anime') tags = {
+    'anime': 'Anime'
+  }
+  if (teks == 'nsfw') tags = {
+    'nsfw': 'Nsfw'
+  }
+  if (teks == 'rpg') tags = {
+    'rpg': 'Rpg'
+  }
+  if (teks == 'edukasi') tags = {
+    'edukasi': 'Edukasi'
+  }
+  if (teks == 'news') tags = {
+    'news': 'News'
+  }
+  if (teks == 'random') tags = {
+    'random': 'Random'
+  }
+  if (teks == 'xp') tags = {
+    'xp': 'Exp & Limit'
+  }
+  if (teks == 'stiker') tags = {
+    'sticker': 'Stiker'
+  }
+  if (teks == 'kerangajaib') tags = {
+    'kerang': 'Kerang Ajaib'
+  }
+  if (teks == 'quotes') tags = {
+    'quotes': 'Quotes'
+  }
+  if (teks == 'admin') tags = {
+    'admin': `Admin ${global.opts['restrict'] ? '' : '(Dinonaktifkan)'}`,
+    'group': 'Grup'
+  }
+  if (teks == 'group') tags = {
+    'group': 'Group'
+  }
+  if (teks == 'premium') tags = {
+    'premium': 'Premium'
+  }
+  if (teks == 'internet') tags = {
+    'internet': 'Internet'
+  }
+  if (teks == 'anonymous') tags = {
+    'anonymous': 'Anonymous Chat'
+  }
+  if (teks == 'nulis') tags = {
+    'nulis': 'Nulis',
+    'maker': 'Maker'
+  }
+  if (teks == 'downloader') tags = {
+    'downloader': 'Downloader'
+  }
+  if (teks == 'tools') tags = {
+    'tools': 'Tools'
+  }
+  if (teks == 'fun') tags = {
+    'fun': 'Fun'
+  }
+  if (teks == 'database') tags = {
+    'database': 'Database'
+  }
+  if (teks == 'vote') tags = {
+    'vote': 'Voting',
+    'absen': 'Absen'
+  }
+  if (teks == 'absen') tags = {
+    'absen': 'Absen'
+  }
+  if (teks == 'quran') tags = {
+    'quran': 'Al-Qur\'an',
+    'islamic': 'Islamic'
+  }
+  if (teks == 'audio') tags = {
+    'audio': 'Audio'
+  }
+  if (teks == 'jadibot') tags = {
+    'jadibot': 'Jadi Bot'
+  }
+  if (teks == 'info') tags = {
+    'info': 'Info'
+  }
+  if (teks == 'owner') tags = {
+    'owner': 'Owner',
+    'host': 'Host',
+    'advanced': 'Advanced'
+  }
+ if (teks == 'nsfw') tags = {
+    'nsfw': 'Nsfw'
+  }
+  if (teks == 'nocategory') tags = {
+    '': 'No Category'
+  }
   let ftt = `*Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada Owner
 
  *Official Bot By KhrlMstfa* 
