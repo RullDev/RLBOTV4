@@ -279,7 +279,7 @@ let levelling = require('../lib/levelling')
     itemCount : 2022,
     status: 1,
     surface : 1,
-    message: `𝘼𝙎𝙀𝙋𝘽𝙊𝙏𝙕-MD By 𝐑𝐈𝐃𝐇𝐎 𝐆𝐀𝐍𝐙`, 
+    message: `RullBot-MD By Rull`, 
     orderTitle: `▮Menu ▸`,
     thumbnail: await (await fetch('https://telegra.ph/file/db5b4aed0d6d2e6c10c8f.jpg')).buffer(), //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
@@ -297,7 +297,7 @@ let levelling = require('../lib/levelling')
          setTimeout(resolve, 1000) 
        }) * 1000 
      } 
-     let emot = conn.pickRandom(['❤️', '🌹', '🇮🇩'])
+     let emot = conn.pickRandom(['🗿', '😴', '😱'])
      let muptime = clockString(_muptime) 
      let uptime = clockString(_uptime) 
      global.jam = time 
@@ -317,14 +317,14 @@ let levelling = require('../lib/levelling')
  	let cute = `${pickRandom(['https://telegra.ph/file/c4c3f666673ad816d4813.jpg', 'https://telegra.ph/file/c4c3f666673ad816d4813.jpg', 'https://telegra.ph/file/c4c3f666673ad816d4813.jpg', 'https://telegra.ph/file/c4c3f666673ad816d4813.jpg', 'https://telegra.ph/file/c4c3f666673ad816d4813.jpg', 'https://telegra.ph/file/c4c3f666673ad816d4813.jpg', 'https://telegra.ph/file/c4c3f666673ad816d4813.jpg', 'https://telegra.ph/file/c4c3f666673ad816d4813.jpg', 'https://telegra.ph/file/c4c3f666673ad816d4813.jpg'])}` 
  	let ori = `Hi Kak, @${m.sender.split`@`[0]}
  
-Saya Adalah AsepBotz-MD Salah Satu Bot Whatsapp Yang Siap Membantu Kamu Mempermudah Sesuatu Seperti Membuat Sticker Dan Lainnya, Kalo Kamu Mau Request Fitur Silahkan Ketik #request Pesan Atau Fitur Yang Kamu Inginkan!`
+Saya Adalah RullBot-MD Salah Satu Bot Whatsapp Yang Siap Membantu Kamu Mempermudah Sesuatu Seperti Membuat Sticker Dan Lainnya, Kalo Kamu Mau Request Fitur Silahkan Ketik #request Pesan Atau Fitur Yang Kamu Inginkan!`
 conn.sendMessage(m.chat, {
     	react: {
     		text: emot,
     		key: m.key
     	}
     })	
-return conn.send2ButtonLoc(m.chat, cute, ori, `Note : Jika Anda Menggunakan Wa Lama Atau Mod Dan Tombol Itu Tidak Terlihat Langsung Ketik ${_p}? all`, 'COMMAND', '.? all', 'DONASI', '.donasi', m)
+return conn.send2ButtonLoc(m.chat, cute, ori, `Note : Jika Anda Menggunakan Wa Lama Atau Mod Dan Tombol Itu Tidak Terlihat Langsung Ketik ${_p}? all`, 'PILIH MENU', '.simplemenu', 'DONASI', '.donasi', m)
     
     }
   
